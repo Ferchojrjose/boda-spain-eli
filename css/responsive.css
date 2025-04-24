@@ -533,6 +533,7 @@ extra small mobile 320px.
                 border-right: none;
             }
             .header-area.header-area-3 .logo h1 a {
+                /* ---------- ESTILO DE LETRA --------------- */
                 font-size: 24px;
                 font-family: 'Great Vibes', cursive;
                 color: #fff;
