@@ -183,7 +183,7 @@ Home-page-one
 
 .main-menu nav ul li:hover>a,
 .main-menu nav ul li.active>a {
-    color: #5e9a8e;
+    color: #18233D;
 }
 
 .header-area.header-area2 .main-menu nav ul li:hover>a {
@@ -191,7 +191,7 @@ Home-page-one
 }
 
 .header-area.header-area-3 .main-menu nav ul li:hover>a {
-    color: #15d4ae;
+    color: #18233D;
 }
 
 .main-menu .submenu {
@@ -271,7 +271,7 @@ Home-page-one
 }
 
 .sticky-header.sticky .header-area-3 {
-    background: #1e7b67;
+    background: #18233D;
     color: #333;
 }
 
@@ -415,7 +415,7 @@ slider-area
 }
 
 .slider-3 {
-    background: url(../img/slider/3.jpg) no-repeat center center / cover;
+    background: url(../img/slider/2.jpg) no-repeat center center / cover;
 }
 
 .single-slider2 {
@@ -423,7 +423,7 @@ slider-area
 }
 
 .slider-4 {
-    background: url(../img/slider/4.jpg) no-repeat center center / cover;
+    background: url(../img/slider/1.jpg) no-repeat center center / cover;
 }
 
 .slider-5 {
@@ -472,7 +472,7 @@ slider-area
 .swiper-button-next,
 .swiper-button-prev {
     background-image: none;
-    background: rgba(72, 104, 98, .5);
+    background: rgba(24, 35, 61, .5);
     padding: 10px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -515,7 +515,7 @@ slider-area
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: #5e9a8e;
+    background: #18233D;
     color: #fff;
 }
 
@@ -574,7 +574,7 @@ couple-area
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 50px;
-    color: #649e93;
+    color: #C0CBDE;
 }
 
 .section-title h2:before {
@@ -605,7 +605,7 @@ couple-area
 
 .couple-img {
     overflow: hidden;
-    border: 2px solid #5e9a8e;
+    border: 2px solid #18233D;
     border-radius: 100%;
 }
 
@@ -633,7 +633,7 @@ couple-area
 
 .couple-content h4 {
     font-size: 21px;
-    color: #5e9a8e;
+    color: #18233D;
 }
 
 .couple-content2 h4 {
@@ -694,7 +694,7 @@ couple-area end
 }
 
 .clock-area {
-    background: #5e9a8d;
+    background: #18233D;
     padding: 14px 5px 20px 20px;
 }
 
@@ -703,7 +703,7 @@ couple-area end
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #5e9a8e;
+    background: #18233D;
     opacity: .8;
     left: 0;
     top: 0;
@@ -858,7 +858,7 @@ couple-area end
     top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(94, 154, 140, 0.88);
+    background: rgba(24, 35, 61, 0.88);
     z-index: -1;
 }
 
@@ -906,7 +906,7 @@ Story-Area
     z-index: 20;
     display: block;
     font-size: 50px;
-    color: #5e9a8d82;
+    color: #C0CBDE;
 }
 
 .story-area.story-style-2 .story-top:before,
@@ -968,7 +968,7 @@ Story-Area
 }
 
 .story .item .story-content:hover {
-    background: #f2f9f7;
+    background: #f8fbff;
 }
 
 .story-area.story-style-2 .story .item .story-content:hover {
@@ -987,7 +987,7 @@ Story-Area
 
 .story a.story-btn {
     font-weight: 500;
-    color: #5e9a8d;
+    color: #C0CBDE;
     text-transform: uppercase;
     font-size: 17px;
 }
@@ -1005,7 +1005,7 @@ Story-Area
     margin-top: -4px;
     border: 15px solid transparent;
     border-color: transparent;
-    border-left-color: #f2f9f7;
+    border-left-color: #C0CBDE;
 }
 
 .item:nth-child(odd) .story-content::after {
@@ -1059,14 +1059,14 @@ Story-Area
     margin-bottom: 2px;
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    color: #5e9a8d;
+    color: #18233D;
 }
 
 .story-area.story-style-2 .story .story-content h2 {
     margin-bottom: 2px;
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    color: #9a8c40;
+    color: #C0CBDE;
 }
 
 .story .story-content .btn-link {
@@ -1134,7 +1134,7 @@ Story-Area
 .story-icon span:before {
     font-size: 30px;
     line-height: 30px;
-    color: #5e9a8d;
+    color: #C0CBDE;
 }
 
 .story-area.story-style-2 .story-icon span:before {
@@ -1161,7 +1161,7 @@ Story-Area
 }
 
 .story-area a.theme-btn:hover {
-    color: #5e9a8e;
+    color: #C0CBDE;
 }
 
 .story-area.story-style-2 a.theme-btn:hover {
@@ -1173,7 +1173,7 @@ welcome-area
 =================================*/
 
 .welcome-area {
-    background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(100, 158, 147, 0.81)), transparent url(../img/1.jpg) no-repeat center center / cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(24, 35, 61, 0.81)), transparent url(../img/1.jpg) no-repeat center center / cover fixed;
     padding-top: 85px;
     padding-bottom: 95px;
 }
@@ -1185,7 +1185,7 @@ welcome-area
     left: 0;
     width: 100%;
     height: 100%;
-    background: #649e93;
+    background: #18233D;
     opacity: .9;
 }
 
@@ -1211,7 +1211,7 @@ welcome-area
 .btn a {
     display: inline-block;
     background: #fff;
-    color: #649e93;
+    color: #18233D;
     padding: 10px 38px;
     font-size: 18px;
     transition: all .3s;
@@ -1220,7 +1220,7 @@ welcome-area
 }
 
 .btn a:hover {
-    background: #3f7267;
+    background: #18233D;
     color: #fff;
 }
 
@@ -1252,13 +1252,13 @@ service-area
 
 .service-area-menu li a.active,
 .service-area-menu li a:hover {
-    background: #4e7b72;
+    background: #C0CBDE;
     color: #fff;
 }
 
 .service-area-menu ul {
     margin-top: 50px;
-    background: #649e93;
+    background: #C0CBDE;
 }
 
 .ceromony-content2 {
@@ -1267,11 +1267,11 @@ service-area
 
 .Ceremony-wrap {
     margin-top: 30px;
-    background: #f5fbfb;
+    background: #f8fbff;
 }
 
 .service-area2 .Ceremony-wrap {
-    background: #f5fbfb;
+    background: #f8fbff;
 }
 
 .ceromony-content {
@@ -1284,12 +1284,12 @@ service-area
 
 .ceromony-content h3 {
     font-size: 30px;
-    color: #649e93;
+    color: #18233D;
     margin-bottom: 16px;
 }
 
 .ceromony-content a {
-    color: #649e93;
+    color: #18233D;
     font-weight: 600;
 }
 
@@ -1726,6 +1726,7 @@ home-page2
     font-weight: 400;
 }
 
+/* AQUI VA LA IMAGEN DE FONDO DEL CONTADOR */
 .section-area {
     background: url(../img/counter/3.jpg) no-repeat center center / cover;
     padding: 18px 0;
