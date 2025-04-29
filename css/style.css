@@ -159,7 +159,7 @@ Home-page-one
 
 .main-menu .submenu li a {
     padding: 10px 15px;
-    color: :#333;
+    color: #333;
 }
 
 .main-menu nav ul {
@@ -580,12 +580,16 @@ couple-area
 .section-title h2:before {
     position: absolute;
     content: "";
-    background: url(../img/section/3.png) no-repeat center center / cover;
-    width: 18%;
-    height: 89%;
-    bottom: -20px;
-    left: 41%;
+    background: url(../img/section/flores-doradas.png) no-repeat center / cover;
+    width: 230px;
+    /* Tamaño real de tu imagen */
+    height: 227px;
+    bottom: -110px;
+    left: 40%;
+    margin-bottom: 10px;
 }
+
+
 
 .section-title4 h2:before {
     display: none;
@@ -1173,7 +1177,7 @@ welcome-area
 =================================*/
 
 .welcome-area {
-    background: linear-gradient(rgba(0, 0, 0, 0.81), rgba(24, 35, 61, 0.81)), transparent url(../img/1.jpg) no-repeat center center / cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(24, 35, 61, 0.70)), transparent url(../img/1.jpg) no-repeat center center / cover fixed;
     padding-top: 85px;
     padding-bottom: 95px;
 }
@@ -1728,8 +1732,10 @@ home-page2
 
 /* AQUI VA LA IMAGEN DE FONDO DEL CONTADOR */
 .section-area {
-    background: url(../img/counter/3.jpg) no-repeat center center / cover;
+    /* background: url(../img/counter/3.jpg) no-repeat center center / cover; */
+    background-color: #18233D;
     padding: 18px 0;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
