@@ -26,11 +26,11 @@
             /* .section-title h2:before {
                 width: 28%;
                 height: 17%;
-                top: -50px;
+                top: -70px;
                 left: 36%;
-            }
+            } */
 
-            .section-title h2:after {
+            /* .section-title h2:after {
                 width: 28%;
                 height: 17%;
                 bottom: -13px;
@@ -156,17 +156,17 @@
                 margin-bottom: 30px;
             }
 
-            .section-title h2:before {
+            /* .section-title h2:before {
                 width: 44%;
                 height: 22%;
                 top: -16px;
                 left: 29%;
-            }
+            } */
 
-            .section-title h2:after {
+            /* .section-title h2:after {
                 width: 45%;
                 left: 29%;
-            }
+            } */
 
             .person-wrap {
                 margin-bottom: 30px;
@@ -393,19 +393,19 @@ extra small mobile 320px.
                 display: none;
             }
 
-            .section-title h2:before {
+            /* .section-title h2:before {
                 width: 60%;
                 height: 22%;
                 top: -13px;
                 left: 22%;
-            }
+            } */
 
-            .section-title h2:after {
+            /* .section-title h2:after {
                 width: 60%;
                 height: 22%;
                 bottom: -15px;
                 left: 22%;
-            }
+            } */
 
             .content-sub {
                 padding: 50px 41px;
@@ -671,6 +671,16 @@ extra small mobile 320px.
                 color: #fff;
             }
 
+
+            /* LOGO PARA PANTALLA PEQUEÑA */
+            .logo-boda {
+                /* ideal para pantallas pequeñas */
+                max-width: 320px;
+                /* mantiene proporción */
+                height: auto;
+                padding: 5px;
+            }
+
             .header-area.header-area-3 .slicknav_menu .slicknav_icon-bar {
                 background-color: #fff;
             }
@@ -732,14 +742,14 @@ extra small mobile 320px. end
             /* .section-title h2:before {
                 width: 46%;
                 height: 16%;
-                top: -16px;
+                top: -50px;
                 left: 29%;
             } */
 
             /* .section-title h2:after {
                 width: 46%;
                 height: 16%;
-                bottom: -15px;
+                bottom: -50px;
                 left: 29%;
             } */
 
