@@ -191,7 +191,8 @@ Home-page-one
 }
 
 .header-area.header-area-3 .main-menu nav ul li:hover>a {
-    color: #18233D;
+    /* Color de la letra en el menu al acercar el mouse */
+    color: #D7AF56; 
 }
 
 .main-menu .submenu {
@@ -573,23 +574,20 @@ couple-area
     position: relative;
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
-    margin-bottom: 50px;
     color: #C0CBDE;
+    margin-bottom: 0; /* Elimina el espacio natural del h2 */
 }
 
-.section-title h2:before {
+/* .section-title h2:before {
     position: absolute;
     content: "";
     background: url(../img/section/flores-doradas.png) no-repeat center / cover;
     width: 230px;
-    /* Tamaño real de tu imagen */
     height: 227px;
     bottom: -110px;
     left: 40%;
     margin-bottom: 10px;
-}
-
-
+} */
 
 .section-title4 h2:before {
     display: none;
@@ -900,7 +898,7 @@ Story-Area
     top: auto
 }
 
-.story-top:before,
+/* .story-top:before,
 .story-bottom:before {
     content: '\f10a';
     font-family: "Flaticon";
@@ -911,7 +909,35 @@ Story-Area
     display: block;
     font-size: 50px;
     color: #C0CBDE;
+} */
+
+.story-top:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    z-index: 20;
+    display: block;
+    width: 70px; /* Ajustá al tamaño deseado */
+    height: 70px;
+    background: url('../img/story/top-icon.png') no-repeat center center / cover;
+    transform: translateX(-14%);
 }
+
+
+.story-bottom:before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    z-index: 20;
+    display: block;
+    width: 70px; /* Ajustá al tamaño deseado */
+    height: 70px;
+    background: url('../img/story/bot-icon.png') no-repeat center center / cover;
+    transform: translateX(-7%);
+}
+
 
 .story-area.story-style-2 .story-top:before,
 .story-area.story-style-2 .story-bottom:before {
@@ -926,15 +952,16 @@ Story-Area
 .story .content-wrapper::before {
     content: '';
     position: absolute;
-    top: 44px;
+    top: 40px;
     left: 50%;
     height: 97%;
     width: 4px;
-    background: #E8EFED;
+    /* COLOR DE LA LINEA */
+    background: #ecf3fd; 
 }
 
 .story-area.story-style-2 .story .content-wrapper::before {
-    background: #9a8c40a6;
+    background: #eef4fd;
     opacity: .2;
 }
 
@@ -972,6 +999,7 @@ Story-Area
 }
 
 .story .item .story-content:hover {
+    /* COLOR DE LA TARJETA */
     background: #f8fbff;
 }
 
@@ -1020,7 +1048,7 @@ Story-Area
 }
 
 .item:nth-child(odd) .story-content:hover:after {
-    border-left-color: #f2f9f7;
+    border-left-color: #eef4fd;
 }
 
 .story .item:nth-child(even) {
@@ -1037,7 +1065,7 @@ Story-Area
     margin-top: -4px;
     border: 15px solid transparent;
     border-color: transparent;
-    border-right-color: #f2f9f7;
+    border-right-color: #eef4fd;
 }
 
 .item:nth-child(even) .story-content::after {
@@ -1048,11 +1076,11 @@ Story-Area
 }
 
 .item:nth-child(even) .story-content:hover:after {
-    border-right-color: #f2f9f7;
+    border-right-color: #eef4fd;
 }
 
 .item:nth-child(even) .story-area.story-style-2 .story-content:hover:after {
-    border-right-color: #f2f9f7;
+    border-right-color: #eef4fd;
 }
 
 .story .story-content .image-wrap {
@@ -1112,10 +1140,12 @@ Story-Area
     font-size: 18px;
     line-height: 60px;
     border-radius: 50%;
-    background: #E8EFED;
+    /* COLOR DE FONDO DEL ICONO */
+    background: #eef4fd;
     content: "\f108";
     font-family: "Flaticon";
-    border: 5px solid #d9ece7;
+    /* COLOR DEL BORDE DEL ICONO */
+    border: 5px solid #C0CBDE;
 }
 
 .story-area.story-style-2 .story .story-icon {
@@ -1138,6 +1168,7 @@ Story-Area
 .story-icon span:before {
     font-size: 30px;
     line-height: 30px;
+    /* COLOR DE DEL ICONO */
     color: #C0CBDE;
 }
 
@@ -1165,7 +1196,8 @@ Story-Area
 }
 
 .story-area a.theme-btn:hover {
-    color: #C0CBDE;
+    /* COLOR DE TARJETA */
+    color: #d6e5ff;
 }
 
 .story-area.story-style-2 a.theme-btn:hover {
