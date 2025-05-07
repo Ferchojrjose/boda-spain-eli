@@ -192,7 +192,7 @@ Home-page-one
 
 .header-area.header-area-3 .main-menu nav ul li:hover>a {
     /* Color de la letra en el menu al acercar el mouse */
-    color: #D7AF56; 
+    color: #D7AF56;
 }
 
 .main-menu .submenu {
@@ -574,8 +574,10 @@ couple-area
     position: relative;
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
-    color: #C0CBDE;
-    margin-bottom: 0; /* Elimina el espacio natural del h2 */
+    /* COLOR DE LAS LETRAS DEL TITULO */
+    color: #18233D;
+    margin-bottom: 0;
+    /* Elimina el espacio natural del h2 */
 }
 
 /* .section-title h2:before {
@@ -587,6 +589,11 @@ couple-area
     bottom: -110px;
     left: 40%;
     margin-bottom: 10px;
+} */
+
+
+/* .decoracion-flores {
+    background-color: #18826b;
 } */
 
 .section-title4 h2:before {
@@ -918,7 +925,8 @@ Story-Area
     left: 50%;
     z-index: 20;
     display: block;
-    width: 70px; /* Ajustá al tamaño deseado */
+    width: 70px;
+    /* Ajustá al tamaño deseado */
     height: 70px;
     background: url('../img/story/top-icon.png') no-repeat center center / cover;
     transform: translateX(-14%);
@@ -928,14 +936,15 @@ Story-Area
 .story-bottom:before {
     content: "";
     position: absolute;
-    top: -70px;
+    top: -40px;
     left: 50%;
     z-index: 20;
     display: block;
-    width: 70px; /* Ajustá al tamaño deseado */
+    width: 70px;
+    /* Ajustá al tamaño deseado */
     height: 70px;
-    background: url('../img/story/bot-icon.png') no-repeat center center / cover;
-    transform: translateX(-7%);
+    background: url('../img/story/top-icon.png') no-repeat center center / cover;
+    transform: translateX(-14%);
 }
 
 
@@ -957,7 +966,7 @@ Story-Area
     height: 97%;
     width: 4px;
     /* COLOR DE LA LINEA */
-    background: #ecf3fd; 
+    background: #ecf3fd;
 }
 
 .story-area.story-style-2 .story .content-wrapper::before {
@@ -1141,11 +1150,11 @@ Story-Area
     line-height: 60px;
     border-radius: 50%;
     /* COLOR DE FONDO DEL ICONO */
-    background: #eef4fd;
+    /* background: #eef4fd; */
     content: "\f108";
     font-family: "Flaticon";
     /* COLOR DEL BORDE DEL ICONO */
-    border: 5px solid #C0CBDE;
+    /* border: 5px solid #C0CBDE; */
 }
 
 .story-area.story-style-2 .story .story-icon {
@@ -1462,7 +1471,7 @@ gallery-area
 .gallery-menu button {
     font-size: 17px;
     font-weight: 500;
-    color: #649e93;
+    color: #18233D;
     letter-spacing: 0;
     background: transparent;
     outline: none;
@@ -1479,7 +1488,8 @@ gallery-area
 }
 
 .gallery-menu button.active {
-    background: #4e7b72;
+    /* BOTON ACTIVO */
+    background: #18233D;
     color: #fff;
 }
 
@@ -1512,7 +1522,7 @@ guest-area
 ===============================*/
 
 .guest-area {
-    background: linear-gradient(rgba(100, 158, 147, 0.50), rgba(100, 158, 147, 0.50)), transparent url(../img/guest/1.jpg) center center/cover no-repeat fixed;
+    background: linear-gradient(rgba(24, 35, 61, 0.50), rgba(100, 158, 147, 0.50)), transparent url(../img/guest/1.jpg) center center/cover no-repeat fixed;
     padding: 100px 0;
     position: relative;
     background-attachment: fixed;

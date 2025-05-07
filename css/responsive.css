@@ -681,6 +681,8 @@ extra small mobile 320px.
                 padding: 5px;
             }
 
+
+
             .header-area.header-area-3 .slicknav_menu .slicknav_icon-bar {
                 background-color: #fff;
             }
@@ -795,6 +797,13 @@ extra small mobile 320px. end
 
 
         @media only screen and (max-width: 767px) and (min-width: 320px) {
+
+            /* LOGO DE FLORES */
+            .decoracion-flores img {
+                max-width: 120px;
+                /* Ajustá según se vea mejor */
+                height: auto;
+            }
 
             .story-icon,
             .story-top,
