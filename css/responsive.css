@@ -321,12 +321,14 @@ extra small mobile 320px.
 
         @media (max-width: 767px) {
 
-            .logo-2 {
+            .logo-2 
+            {
                 max-width: 160px;
             }
 
-            .logo-3 {
-                max-width: 220px;
+            .logo-3
+            {
+                max-width: 160px;
             }
 
             .swiper-container {
