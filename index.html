@@ -198,7 +198,7 @@
                 </div>
 
                 <div class="decoracion-flores text-center">
-                    <img src="../img/section/4.png" alt="Decoración floral" class="img-fluid">
+                    <img src="img/story/flores.png" alt="Decoración floral" class="img-fluid">
                 </div>
             </div>
 
@@ -304,7 +304,7 @@
                 </div>
 
                 <div class="decoracion-flores text-center">
-                    <img src="../img/story/5.png" alt="Decoración floral" class="img-fluid">
+                    <img src="img/story/flores.png" alt="Decoración floral" class="img-fluid">
                 </div>
             </div>
 
@@ -323,7 +323,7 @@
                                 <!-- Icono Pajaros -->
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
 
@@ -344,7 +344,7 @@
                             <div class="item">
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
                                 <div class="story-content">
@@ -366,7 +366,7 @@
                             <div class="item">
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
                                 <div class="story-content">
@@ -388,7 +388,7 @@
                             <div class="item">
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
                                 <div class="story-content">
@@ -408,7 +408,7 @@
                             <div class="item">
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
                                 <div class="story-content">
@@ -429,7 +429,7 @@
                             <div class="item">
                                 <div class="story-icon">
                                     <!-- <span class="flaticon-birds-in-love"></span> -->
-                                    <img src="../img/story/bot-icon.png" alt="Icono decorativo"
+                                    <img src="img/story/bot-icon.png" alt="Icono decorativo"
                                         class="img-fluid story-icon-img">
                                 </div>
                                 <div class="story-content">
@@ -469,7 +469,7 @@
                 </div>
 
                 <div class="decoracion-flores text-center">
-                    <img src="../img/section/5.png" alt="Decoración floral" class="img-fluid">
+                    <img src="img/story/flores.png" alt="Decoración floral" class="img-fluid">
                 </div>
             </div>
             <div class="service-area-menu">
@@ -557,7 +557,7 @@
                         <h2>Momentos Especiales</h2>
                     </div>
                     <div class="decoracion-flores text-center mb-5">
-                        <img src="../img/section/4.png" alt="Decoración floral" class="img-fluid">
+                        <img src="img/story/flores.png" alt="Decoración floral" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-12">
@@ -623,52 +623,95 @@
                     <div class="guest-wrap">
                         <div class="col-12">
                             <div class="section-title section-title4 text-center">
-                                <h2>Be Our Guest</h2>
+                                <h2>¡Nos casamos!</h2>
                                 <p>
-                                    Aquí abajo te dejamos cómo hacerlo. </br> ¡Te esperamos con los brazos abiertos y la pista
+                                    Aquí abajo te dejamos cómo hacerlo. </br> ¡Te esperamos con los brazos abiertos y la
+                                    pista
                                     lista!
                                 </p>
                             </div>
                         </div>
+
                         <div class="contact-form form-style">
-                            <form id="rsvp-form" action="mail.php" class="validate-rsvp-form" method="post">
+                            <form id="rsvp-form" class="validate-rsvp-form" onsubmit="return false;">
                                 <div class="row">
-                                    <div class="col-12 col-sm-6">
-                                        <input type="text" placeholder="Your Name*" id="fname" name="name">
+
+                                    <!-- Nombre completo -->
+                                    <div class="col-12">
+                                        <input type="text" placeholder="Nombre completo*" id="fullname" name="fullname"
+                                            required>
                                     </div>
-                                    <div class="col-12  col-sm-6">
-                                        <input type="text" placeholder="Your Email*" id="email" name="email">
+
+                                    <!-- ¿Vas a asistir? -->
+                                    <div class="col-12 mt-5">
+                                        <label for="asistencia" class="form-label" style="margin-bottom: 4px;">¿Vas a
+                                            asistir?</label>
+                                        <select class="form-control" id="asistencia" name="asistencia" required>
+                                            <option disabled selected>Selecciona una opción</option>
+                                            <option value="Sí">Sí, ¡cuento los días!</option>
+                                            <option value="No">No podré ir 😞</option>
+                                        </select>
                                     </div>
-                                    <div class="col col-sm-6">
-                                        <select class="form-control" name="guest">
-                                            <option disabled selected>Number Of Guest*</option>
+
+                                    <!-- ¿Cuántos vendrán contigo? -->
+                                    <div class="col-12 mt-5">
+                                        <label for="invitados" class="form-label">¿Cuántos vendrán contigo?
+                                            (Incluyéndote a ti)</label>
+                                        <select class="form-control" id="invitados" name="invitados" required>
+                                            <option disabled selected>Selecciona una opción</option>
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
                                             <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
                                         </select>
                                     </div>
-                                    <div class="col col-sm-6">
-                                        <select class="form-control" name="events">
-                                            <option disabled selected>I Am Attending*</option>
-                                            <option>Al events</option>
-                                            <option>Wedding ceremony</option>
-                                            <option>Reception party</option>
+
+                                    <!-- Alergias o requerimientos -->
+                                    <div class="col-12 mt-5">
+                                        <label for="alergias" class="form-label">
+                                            ¿Alguna alergia o requerimiento especial de comida?
+                                        </label>
+                                        <input type="text" class="form-control" id="alergias" name="alergias"
+                                            placeholder="Especifica si aplica (Intolerancias, celíaco, sin frutos secos, etc...)">
+                                    </div>
+
+                                    <!-- Peques -->
+                                    <div class="col-12 mt-5">
+                                        <label for="peques" class="form-label" style="margin-bottom: 4px;">
+                                            ¿Vendrían peques contigo hasta los 12 años?
+                                        </label>
+                                        <select class="form-control" id="peques" name="peques" required>
+                                            <option disabled selected>Selecciona una opción</option>
+                                            <option value="Sí">Sí</option>
+                                            <option value="No">No</option>
                                         </select>
+
+                                        <input type="text" class="form-control mt-2" id="detalle-peques"
+                                            name="detalle_peques" placeholder="¿Cuántos y qué edades? (opcional)">
                                     </div>
-                                    <div class="col-12">
-                                        <textarea class="contact-textarea" placeholder="Message"
-                                            name="notes"></textarea>
+
+                                    <!-- Mensaje final -->
+                                    <div class="col-12 mt-5">
+                                        <label for="mensaje" class="form-label">¿Algo que quieras decirnos?</label>
+                                        <textarea class="contact-textarea" id="mensaje" name="mensaje"
+                                            placeholder="(Un mensaje bonito, un versículo, un chiste... lo que quieras)"></textarea>
                                     </div>
+
+                                    <!-- Botón -->
                                     <div class="col-12 text-center">
-                                        <button id="submit" class="submit">Send Invitation</button>
+                                        <button id="submit" class="submit">Enviar</button>
                                         <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
                                     </div>
-                                    <div class="col col-md-12 success-error-message">
-                                        <div id="success">Thank you</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later.
+
+                                    <!-- Mensajes de éxito/error -->
+                                    <div class="col-12 success-error-message">
+                                        <div id="success">¡Gracias por confirmar tu asistencia!</div>
+                                        <div id="error">Ocurrió un error al enviar. Por favor, inténtalo más tarde.
                                         </div>
                                     </div>
+
                                 </div>
                             </form>
                         </div>
@@ -707,9 +750,15 @@
     <div class="footer-area">
         <div class="container">
             <div class="footer-content">
-                <div class="content-sub">
+                <!-- <div class="content-sub">
                     <h2>Thank You</h2>
                     <span>For Being With Us</span>
+                </div> -->
+                <div class="mb-5">
+                    <img src="img/footer/2.png" alt="Logo 1" class="footer-logo logo-2">
+                </div>
+                <div>
+                    <img src="img/footer/3.png" alt="Logo 2" class="footer-logo logo-3">
                 </div>
             </div>
         </div>
@@ -728,6 +777,8 @@
         </div>
     </div>
     <!-- end music box -->
+
+
 
     <!-- all js here -->
     <!-- modernizr-3.5.0.min.js -->
@@ -760,6 +811,8 @@
     <script src="js/validation.js"></script>
     <!-- main.js -->
     <script src="js/main.js"></script>
+    <!-- Formulario -->
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>

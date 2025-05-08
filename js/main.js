@@ -102,7 +102,7 @@
         prependTo: '#mobile_menu'
     });
     /*------------------------------------------
-        = RSVP FORM SUBMISSION
+        = RSVP FORM SUBMISSION, MANDAR FORMULARIO
     -------------------------------------------*/
     if ($("#rsvp-form").length) {
         $("#rsvp-form").validate({
