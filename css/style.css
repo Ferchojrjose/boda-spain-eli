@@ -1596,8 +1596,9 @@ select.form-control:not([size]):not([multiple]) {
     background: none;
     border: none;
     padding: 5px 15px 8px;
-    background: #649e93;
-    color: #fff;
+    /* COLOR PRINCIPAL DEL BOOTON */
+    background: #18233D;
+    color: #FFF;
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
@@ -1608,7 +1609,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .contact-form button:hover {
-    background: #3f7267;
+    /* SEGUNDO COLOR DE BOTON */
+    color: #D7AF56;
 }
 
 ::-webkit-input-placeholder {
@@ -1665,7 +1667,7 @@ footer-area
     z-index: 1;
 }
 
-.footer-area:before {
+/* .footer-area:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1675,7 +1677,24 @@ footer-area
     background: #000;
     opacity: .5;
     z-index: -1;
+} */
+
+.footer-logo {
+    display: block !important;
+    margin: 0 auto 20px auto;
+    height: auto;
 }
+
+/* Logo 2: tamaño estándar */
+.logo-2 {
+    max-width: 220px;
+}
+
+/* Logo 3: un poco más grande */
+.logo-3 {
+    max-width: 300px;
+}
+
 
 .footer-content {
     margin: auto;
