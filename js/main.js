@@ -4,7 +4,7 @@
 
 ==========================================*/
 
-(function($) {
+(function ($) {
     var swiper = new Swiper('.swiper-container', {
         loop: true,
         speed: 4000,
@@ -18,7 +18,7 @@
     /*================================
     Window Load
     ==================================*/
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         smoothScrolling($(".main-menu nav ul li a[href^='#']"), headerHeight);
         smoothScrolling($(".scrollup a[href^='#']"), 0);
         smoothScrolling($(".welcome-content .btn a[href^='#']"), 0);
@@ -38,14 +38,14 @@
     -------------------------------------------*/
     function preloader() {
         if ($('.preloader').length) {
-            $('.preloader').delay(100).fadeOut(500, function() {});
+            $('.preloader').delay(100).fadeOut(500, function () { });
         }
     }
 
     /*================================
      sticky-header
      ==================================*/
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         if ($(window).scrollTop() > 10) {
             $('.sticky-header').addClass('sticky'),
@@ -130,24 +130,24 @@
                 events: "Select your event list"
             },
 
-            submitHandler: function(form) {
+            submitHandler: function (form) {
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
                     url: "mail.php",
                     data: $(form).serialize(),
-                    success: function() {
+                    success: function () {
                         $("#loader").hide();
                         $("#success").slideDown("slow");
-                        setTimeout(function() {
+                        setTimeout(function () {
                             $("#success").slideUp("slow");
                         }, 3000);
                         form.reset();
                     },
-                    error: function() {
+                    error: function () {
                         $("#loader").hide();
                         $("#error").slideDown("slow");
-                        setTimeout(function() {
+                        setTimeout(function () {
                             $("#error").slideUp("slow");
                         }, 3000);
                     }
@@ -170,10 +170,10 @@
     /*================================
       Isotope Portfolio
      ==================================*/
-    $('.grid').imagesLoaded(function() {
+    $('.grid').imagesLoaded(function () {
 
         // filter items on button click
-        $('.gallery-menu').on('click', 'button', function() {
+        $('.gallery-menu').on('click', 'button', function () {
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({
                 filter: filterValue
@@ -194,7 +194,7 @@
 
     });
 
-    $('.gallery-menu button').on('click', function() {
+    $('.gallery-menu button').on('click', function () {
         $('.gallery-menu button').removeClass('active');
         $(this).addClass('active');
     });
@@ -203,16 +203,53 @@
     /*------------------------------------------
         = COUNTDOWN CLOCK
     -------------------------------------------*/
-    if ($("#clock").length) {
-        $('#clock').countdown('2019/12/25', function(event) {
-            var $this = $(this).html(event.strftime('' +
-                '<div class="box"><div class="date">%D</div> <span>month</span> </div>' +
-                '<div class="box"><div class="date">%D</div> <span>Days</span> </div>' +
-                '<div class="box"><div class="date">%H</div> <span>Hours</span> </div>' +
-                '<div class="box"><div class="date">%M</div> <span>Mins</span> </div>' +
-                '<div class="box"><div class="date">%S</div> <span>Secs</span> </div>'));
-        });
+
+    function getTimeRemaining(targetDate) {
+        const now = new Date();
+        const end = new Date(targetDate);
+
+        let totalMs = end - now;
+
+        // Calcular meses manualmente
+        let months = (end.getFullYear() - now.getFullYear()) * 12 + (end.getMonth() - now.getMonth());
+        if (now.getDate() > end.getDate()) {
+            months--;
+        }
+
+        // Calcular días restantes dentro del mes actual
+        let tempDate = new Date(now);
+        tempDate.setMonth(tempDate.getMonth() + months);
+        let days = Math.floor((end - tempDate) / (1000 * 60 * 60 * 24));
+
+        // Calcular resto del tiempo
+        let hours = end.getHours() - now.getHours();
+        let minutes = end.getMinutes() - now.getMinutes();
+        let seconds = end.getSeconds() - now.getSeconds();
+
+        if (seconds < 0) { seconds += 60; minutes--; }
+        if (minutes < 0) { minutes += 60; hours--; }
+        if (hours < 0) { hours += 24; days--; }
+
+        return { months, days, hours, minutes, seconds };
     }
+
+
+    function updateClock() {
+        const t = getTimeRemaining('2025-09-14T00:00:00');
+
+        if (t.months <= 0 && t.days <= 0 && t.hours <= 0 && t.minutes <= 0 && t.seconds <= 0) {
+            document.getElementById('clock').innerHTML = '<div class="box">¡Hoy es el gran día! 🎉💍</div>';
+        } else {
+            document.getElementById('clock').innerHTML =
+                `<div class="box"><div class="date">${t.months}</div><span>Meses</span></div>` +
+                `<div class="box"><div class="date">${t.days}</div><span>Días</span></div>` +
+                `<div class="box"><div class="date">${t.hours}</div><span>Horas</span></div>` +
+                `<div class="box"><div class="date">${t.minutes}</div><span>Minutos</span></div>` +
+                `<div class="box"><div class="date">${t.seconds}</div><span>Segundos</span></div>`;
+        }
+    }
+
+    setInterval(updateClock, 1000);
 
     /*================================
      Variable Initialize
@@ -225,7 +262,7 @@
         var links = $links;
         var topGap = $topGap;
 
-        links.on("click", function() {
+        links.on("click", function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
@@ -244,7 +281,7 @@
         = BACK TO TOP
     -------------------------------------------*/
     if ($(".scrollup").length) {
-        $(".scrollup").on("click", function() {
+        $(".scrollup").on("click", function () {
             $("html,body").animate({
                 scrollTop: 0
             }, 1000, "easeInOutExpo");
@@ -282,7 +319,7 @@
         });
 
         // Automatic drops
-        setInterval(function() {
+        setInterval(function () {
             var $el = $('.ripple');
             var x = Math.random() * $el.outerWidth();
             var y = Math.random() * $el.outerHeight();
@@ -346,7 +383,7 @@
         var musicBtn = $(".music-box-toggle-btn"),
             musicBox = $(".music-holder");
 
-        musicBtn.on("click", function() {
+        musicBtn.on("click", function () {
             musicBox.toggleClass("toggle-music-box");
             return false;
         })
