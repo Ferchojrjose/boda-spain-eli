@@ -84,7 +84,7 @@
     <!-- header-area end -->
 
 
-    <!-- slider-area start -->
+    <!-- Sldier Fotos start -->
     <div class="slider-area slider-style-2 slider-two parallax">
 
         <div class="swiper-container">
@@ -153,14 +153,14 @@
         </div>
 
     </div>
-    <!-- slider-area end -->
+    <!-- Sldier Fotos end -->
 
 
     <!-- Contador-section -->
     <div class="count-down-area">
         <section class="count-down-section section-padding parallax" data-speed="7">
             <div class="container">
-                
+
                 <!-- row -->
                 <div class="count-down-item count-down-item2">
                     <div class="row">
@@ -635,7 +635,9 @@
                         </div>
 
                         <div class="contact-form form-style">
-                            <form id="rsvp-form" class="validate-rsvp-form" onsubmit="return false;">
+
+                            <form id="rsvp-form" class="validate-rsvp-form">
+
                                 <div class="row">
 
                                     <!-- Nombre completo -->
@@ -646,10 +648,11 @@
 
                                     <!-- ¿Vas a asistir? -->
                                     <div class="col-12 mt-5">
-                                        <label for="asistencia" class="form-label" style="margin-bottom: 4px;">¿Vas a
-                                            asistir?</label>
+                                        <label for="asistencia" class="form-label" style="margin-bottom: 4px;">
+                                            ¿Vas a asistir?
+                                        </label>
                                         <select class="form-control" id="asistencia" name="asistencia" required>
-                                            <option disabled selected>Selecciona una opción</option>
+                                            <option disabled selected value="">Selecciona una opción</option>
                                             <option value="Sí">Sí, ¡cuento los días!</option>
                                             <option value="No">No podré ir 😞</option>
                                         </select>
@@ -710,8 +713,7 @@
                                     <!-- Mensajes de éxito/error -->
                                     <div class="col-12 success-error-message">
                                         <div id="success">¡Gracias por confirmar tu asistencia!</div>
-                                        <div id="error">Ocurrió un error al enviar. Por favor, inténtalo más tarde.
-                                        </div>
+                                        <div id="error">Ocurrió un error al enviar. Por favor, inténtalo más tarde</div>
                                     </div>
 
                                 </div>
@@ -753,19 +755,23 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="content-sub">
-                    <h2>Thank You</h2>
-                    <span>For Being With Us</span>
-                </div> -->
+                <h2>Thank You</h2>
+                <span>For Being With Us</span>
+            </div> -->
+
                 <div class="mb-5">
                     <img src="img/footer/2.png" alt="Logo 1" class="footer-logo logo-2">
                 </div>
+
                 <div>
-                    <img src="img/footer/3.png" alt="Logo 2" class="footer-logo logo-3">
+                    <a href="https://www.facebook.com/wappsbrands/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/footer/3.png" alt="Logo 2" class="footer-logo logo-3">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- .footer-area start -->
+    <!-- .footer-area end -->
 
 
     <!-- strat music-box -->
@@ -815,6 +821,9 @@
     <script src="js/main.js"></script>
     <!-- Formulario -->
     <script src="js/formulario.js"></script>
+    <!-- Peticion a Google App Script -->
+    <script src="js/googleAppScript.js"></script>
+
 </body>
 
 </html>

@@ -14,3 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const asistenciaSelect = document.getElementById('asistencia');
+    const invitadosSelect = document.getElementById('invitados');
+
+    // Escuchar cuando cambie la opción de asistencia
+    asistenciaSelect.addEventListener('change', function () {
+        if (asistenciaSelect.value === 'Sí') {
+            invitadosSelect.required = true;
+        } else {
+            invitadosSelect.required = false;
+            invitadosSelect.value = 'Selecciona una opción'; // Limpiar si eligen "No"
+        }
+    });
+});
