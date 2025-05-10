@@ -149,6 +149,24 @@ Home-page-one
     transition: background 0.3s ease 0s;
 }
 
+
+.date-letter h3 {
+    font-size: 20px;
+    color: #18233D;
+    display: block;
+}
+
+
+.notification-letter h4 {
+    position: relative;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    /* COLOR DE LAS LETRAS DEL TITULO */
+    color: #18233D;
+    margin-bottom: 0;
+    /* Elimina el espacio natural del h2 */
+}
+
 .header-area.header-area2 .main-menu nav ul li a {
     color: #fff;
 }
@@ -272,6 +290,7 @@ Home-page-one
 }
 
 .sticky-header.sticky .header-area-3 {
+    /* COLOR DE NARVAR */
     background: #18233D;
     color: #333;
 }
@@ -443,7 +462,6 @@ slider-area
     margin: auto;
     display: flex;
     align-items: center;
-    z-index: 99;
     position: relative;
 }
 
@@ -707,7 +725,7 @@ couple-area end
     padding: 14px 5px 20px 20px;
 }
 
-.count-down-area:before {
+/* .count-down-area:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -716,7 +734,7 @@ couple-area end
     opacity: .8;
     left: 0;
     top: 0;
-}
+} */
 
 
 .count-down-section h2 {
@@ -1223,16 +1241,15 @@ welcome-area
     padding-bottom: 95px;
 }
 
-.welcome-area:before {
+/* .welcome-area:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #18233D;
-    opacity: .9;
-}
+    background: transparent;
+} */
 
 .welcome-content {
     text-align: center;
@@ -2369,7 +2386,7 @@ h4.comment-title {
 
 .validate-rsvp-form #loader i {
     font-size: 20px;
-    color: #fff;
+    color: #18233D;
 }
 
 .validate-rsvp-form #success,

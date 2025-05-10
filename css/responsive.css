@@ -321,13 +321,18 @@ extra small mobile 320px.
 
         @media (max-width: 767px) {
 
-            .logo-2 
-            {
+            img-responsive-mobile {
+                width: 100px;
+                /* o ajusta a gusto */
+                height: auto;
+                /* para mantener proporción */
+            }
+
+            .logo-2 {
                 max-width: 160px;
             }
 
-            .logo-3
-            {
+            .logo-3 {
                 max-width: 160px;
             }
 
