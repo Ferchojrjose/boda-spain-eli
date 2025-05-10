@@ -328,6 +328,10 @@ extra small mobile 320px.
                 /* para mantener proporción */
             }
 
+            .date-letter h4 {
+                font-size: 20px;
+            }	
+
             .logo-2 {
                 max-width: 160px;
             }
