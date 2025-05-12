@@ -2482,7 +2482,8 @@ h4.comment-title {
 }
 
 .music-box.music-box-2 button {
-    color: #5e9a8e;
+    /* COLOR DEL ICONO */
+    color: #18233D;
 }
 
 @media (max-width: 991px) {
