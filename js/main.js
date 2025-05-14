@@ -210,37 +210,59 @@
 
         let totalMs = end - now;
 
+        if (totalMs <= 0) {
+            return { months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
+        }
+
         // Calcular meses manualmente
         let months = (end.getFullYear() - now.getFullYear()) * 12 + (end.getMonth() - now.getMonth());
         if (now.getDate() > end.getDate()) {
             months--;
         }
 
-        // Calcular días restantes dentro del mes actual
+        // Ajustar días dentro del mes actual
         let tempDate = new Date(now);
         tempDate.setMonth(tempDate.getMonth() + months);
-        let days = Math.floor((end - tempDate) / (1000 * 60 * 60 * 24));
+        let dayDiff = Math.floor((end - tempDate) / (1000 * 60 * 60 * 24));
 
-        // Calcular resto del tiempo
+        // Calcular horas, minutos, segundos
         let hours = end.getHours() - now.getHours();
         let minutes = end.getMinutes() - now.getMinutes();
         let seconds = end.getSeconds() - now.getSeconds();
 
         if (seconds < 0) { seconds += 60; minutes--; }
         if (minutes < 0) { minutes += 60; hours--; }
-        if (hours < 0) { hours += 24; days--; }
+        if (hours < 0) { hours += 24; dayDiff--; }
 
-        return { months, days, hours, minutes, seconds };
+        // Nunca valores negativos
+        return {
+            months: Math.max(0, months),
+            days: Math.max(0, dayDiff),
+            hours: Math.max(0, hours),
+            minutes: Math.max(0, minutes),
+            seconds: Math.max(0, seconds)
+        };
     }
 
 
     function updateClock() {
         const t = getTimeRemaining('2025-09-14T00:00:00');
 
-        if (t.months <= 0 && t.days <= 0 && t.hours <= 0 && t.minutes <= 0 && t.seconds <= 0) {
-            document.getElementById('clock').innerHTML = '<div class="box">¡Hoy es el gran día! 🎉💍</div>';
+        const isEventToday = t.months === 0 && t.days === 0 && t.hours === 0 && t.minutes === 0 && t.seconds === 0;
+
+        const clock = document.getElementById('clock');
+        const titleClock = document.getElementById('title-clock');
+
+        if (isEventToday) {
+
+            clock.innerHTML =
+                `<div class="box"><div class="date">${0}</div><span>Meses</span></div>` +
+                `<div class="box"><div class="date">${0}</div><span>Días</span></div>` +
+                `<div class="box"><div class="date">${0}</div><span>Horas</span></div>` +
+                `<div class="box"><div class="date">${0}</div><span>Minutos</span></div>` +
+                `<div class="box"><div class="date">${0}</div><span>Segundos</span></div>`;
         } else {
-            document.getElementById('clock').innerHTML =
+            clock.innerHTML =
                 `<div class="box"><div class="date">${t.months}</div><span>Meses</span></div>` +
                 `<div class="box"><div class="date">${t.days}</div><span>Días</span></div>` +
                 `<div class="box"><div class="date">${t.hours}</div><span>Horas</span></div>` +
@@ -250,6 +272,8 @@
     }
 
     setInterval(updateClock, 1000);
+    updateClock(); // Ejecutar al cargar
+
 
     /*================================
      Variable Initialize
@@ -380,15 +404,26 @@
         = TOGGLE MUSUC BIX
     -------------------------------------------*/
     if ($(".music-box").length) {
-        var musicBtn = $(".music-box-toggle-btn"),
-            musicBox = $(".music-holder");
+        const musicBtn = $(".music-box-toggle-btn");
+        const musicBox = $(".music-holder");
+        const audio = document.getElementById("wedding-audio");
+
+        let isPlaying = true;
 
         musicBtn.on("click", function () {
             musicBox.toggleClass("toggle-music-box");
+
+            if (audio) {
+                if (isPlaying) {
+                    audio.pause();
+                } else {
+                    audio.play().catch(() => { }); // En caso de bloqueo por navegador
+                }
+                isPlaying = !isPlaying;
+            }
+
             return false;
-        })
+        });
     }
-
-
 
 }(jQuery));

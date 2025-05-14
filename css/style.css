@@ -722,6 +722,13 @@ couple-area end
 /*===========================
  count-down
 =============================*/
+
+.audio {
+    display: none;
+}
+
+
+
 .count-down-area {
     padding-top: 100px;
 }
