@@ -837,6 +837,19 @@
     <!-- Peticion a Google App Script -->
     <script src="js/googleAppScript.js"></script>
 
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById("wedding-audio");
+            if (audio) {
+                audio.play().catch(e => {
+                    // En caso de que el navegador lo bloquee, esperar primer clic del usuario
+                    document.addEventListener("click", () => audio.play(), { once: true });
+                });
+            }
+        });
+    </script>
+
+
 
 </body>
 
